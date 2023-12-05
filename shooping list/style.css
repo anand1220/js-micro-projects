@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px;
+    background-color: greenyellow;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+ul button {
+    float: right;
+}

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: rebeccapurple;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.theme-btn {
+    padding: 10px;
+    float: right;
+    margin: 10px 20px;
+}

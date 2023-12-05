@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+        }
+
+        .con {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <h1>Color changer</h1>
+        <div class="box"></div>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    <script>
+        let strtBtn = document.querySelector('#start');
+        let stopBtn = document.querySelector('#stop');
+        let box = document.querySelector('.box')
+        let intervalId;
+        let randomColor = function () {
+            colors = '0123456789ABCDEF';
+            let hex = '#';
+            for (let i = 0; i < 6; i++) {
+                hex += colors[Math.floor(Math.random() * 16)];
+            }
+            return hex;
+        }
+
+        const startChangingColor = function () {
+            if (!intervalId) {
+                intervalId = setInterval(() => {
+                    box.style.backgroundColor = randomColor();
+                }, 1000)
+            }
+
+
+        }
+        const stopChangingColor = function () {
+            clearInterval(intervalId);
+            intervalId = null;
+        }
+        strtBtn.addEventListener('click', startChangingColor);
+        stopBtn.addEventListener('click', stopChangingColor);
+
+    </script>
+</body>
+
+</html>

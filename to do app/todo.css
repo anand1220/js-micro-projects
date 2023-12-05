@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.pexels.com/photos/2842734/pexels-photo-2842734.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: azure;
+    padding: 20px 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    margin-top: 10px;
+    /* border: none; */
+    padding: 5px;
+}
+
+.add-task {
+    background-color: blueviolet;
+    color: white;
+}
+
+.list-container {
+    list-style-type: none;
+}
+
+.list-container li {
+    font-size: 1.1rem;
+    color: goldenrod;
+}
+
+.remove-li {
+    float: right;
+
+}
+
+.remove-li,
+.list-container li {
+    margin-top: 7px;
+}
